@@ -1,0 +1,54 @@
+.container {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > h4 {
+    margin-bottom: 0.5rem;
+}
+
+.container > nav {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container > nav > a {
+    font-size: 0.8rem;
+    color: var(--dark-gray);
+
+    border: 1px solid var(--dark-gray);
+    border-radius: 4px;
+
+    line-height: 2.1rem;
+    padding: 0 1rem;
+
+    cursor: pointer;
+}
+
+.container > nav > a:hover,
+.container > nav > a.active {
+    color: var(--dark-green);
+    border-color: var(--dark-green);
+}
+
+.container > span {
+    color: var(--light-gray);
+    opacity: 0.5;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-style: italic;
+    align-self: flex-end;
+    position: relative;
+    padding-right: 1.4rem;
+}
+
+.container > span::after {
+    content: '↑';
+    font-size: 140%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
