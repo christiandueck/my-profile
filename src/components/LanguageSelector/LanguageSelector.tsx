@@ -10,6 +10,8 @@ export function LanguageSelector() {
 
         if (window.innerWidth <= 720) {
             setIsLanguageMenuVisible(!isLanguageMenuVisible);
+        } else {
+            setIsLanguageMenuVisible(false);
         }
     }
 

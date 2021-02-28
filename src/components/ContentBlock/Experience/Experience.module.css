@@ -1,0 +1,18 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience p {
+    display: flex;
+    font-weight: 300;
+}
+
+.experience h6 {
+    margin: 0 1.8rem 0 0.4rem;
+}
+
+.experience span {
+    color: var(--dark-gray);
+    font-size: 0.8rem;
+}
