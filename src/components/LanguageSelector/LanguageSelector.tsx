@@ -1,23 +1,67 @@
+import { useState } from 'react';
 import styles from './LanguageSelector.module.css';
 
 export function LanguageSelector() {
+    const [language, setLanguage] = useState('en');
+    const [isLanguageMenuVisible, setIsLanguageMenuVisible] = useState(false);
+
+    function changeLanguage(language: string) {
+        setLanguage(language);
+
+        if (window.innerWidth <= 720) {
+            setIsLanguageMenuVisible(!isLanguageMenuVisible);
+        }
+    }
+
     return (
-        <div className={styles.container}>
+        <div className={styles.wrapper}>
 
-            <h4>Fluent in:</h4>
+            <div className={styles.container}>
 
-            <nav>
-                <a className={styles.active}>english</a>
+                <h4>Fluent in:</h4>
 
-                <a>german</a>
+                <nav>
+                    <a
+                        className={language == 'en' ? styles.active : styles.empty}
+                        onClick={() => changeLanguage('en')}
+                    >english</a>
 
-                <a>portuguese</a>
-            </nav>
+                    <a
+                        className={language == 'de' ? styles.active : styles.empty}
+                        onClick={() => changeLanguage('de')}
+                    >german</a>
 
-            <span>
-                choose content language
-            </span>
+                    <a
+                        className={language == 'pt' ? styles.active : styles.empty}
+                        onClick={() => changeLanguage('pt')}
+                    >portuguese</a>
+                </nav>
 
+                <span>
+                    choose content language
+                </span>
+            </div>
+
+            <div
+                className={`${styles.languageMobileMenu} ${isLanguageMenuVisible && styles.visible}`}
+            >
+                <nav>
+                    <a
+                        className={language == 'en' ? styles.active : styles.empty}
+                        onClick={() => changeLanguage('en')}
+                    >english</a>
+
+                    <a
+                        className={language == 'de' ? styles.active : styles.empty}
+                        onClick={() => changeLanguage('de')}
+                    >german</a>
+
+                    <a
+                        className={language == 'pt' ? styles.active : styles.empty}
+                        onClick={() => changeLanguage('pt')}
+                    >portuguese</a>
+                </nav>
+            </div>
         </div>
     );
 }

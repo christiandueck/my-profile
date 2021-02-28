@@ -9,14 +9,16 @@
     margin-bottom: 0.5rem;
 }
 
-.container > nav {
+.container > nav,
+.languageMobileMenu > nav {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-.container > nav > a {
+.container > nav > a,
+.languageMobileMenu > nav > a {
     font-size: 0.8rem;
     color: var(--dark-gray);
 
@@ -32,7 +34,9 @@
 }
 
 .container > nav > a:hover,
-.container > nav > a.active {
+.container > nav > a.active,
+.languageMobileMenu > nav > a:hover,
+.languageMobileMenu > nav > a.active {
     color: var(--dark-green);
     border-color: var(--dark-green);
 }
@@ -55,6 +59,53 @@
     position: absolute;
     top: 10%;
     right: 0;
+}
+
+.container > nav > a.emtpy {
+    color: inherit;
+}
+
+
+.languageMobileMenu {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+    
+    display: none;
+}
+
+.languageMobileMenu > nav {
+    top: 2.5rem;
+
+    display: flex;
+    gap: 1.5rem;
+
+    background: rgba(197, 198, 200, 0.05);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    animation: languageMenu 0.2s;
+}
+
+.languageMobileMenu > nav > a {
+    flex: 1;
+    text-align: center;
+}
+
+.visible {
+    display: initial;
+}
+
+@keyframes languageMenu {
+    from {
+        padding: 0.8rem;
+        opacity: 0;
+    }
+    to {
+        padding: 1.5rem;
+        opacity: 1;
+    }
 }
 
 @media(max-width: 720px) {
@@ -84,9 +135,6 @@
     
     .container > span::after {
         content: '→';
-        font-size: 130%;
-        position: absolute;
-        top: 0;
-        right: 0;
+        top: -10%;
     }
 }
