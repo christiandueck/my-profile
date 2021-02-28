@@ -1,5 +1,6 @@
 .container {
-    align-self: flex-end;
+    grid-area: language;
+    justify-self: right;
     display: flex;
     flex-direction: column;
 }
@@ -26,6 +27,8 @@
     padding: 0 1rem;
 
     cursor: pointer;
+
+    transition: 0.2s;
 }
 
 .container > nav > a:hover,
@@ -43,6 +46,7 @@
     align-self: flex-end;
     position: relative;
     padding-right: 1.4rem;
+    font-weight: 300;
 }
 
 .container > span::after {

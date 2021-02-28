@@ -48,6 +48,21 @@ a {
   color: inherit;
 }
 
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #46A29F 0%, #66FCF1 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+h3 {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 h4 {
   font-size: 1.25rem;
   color: var(--dark-green);

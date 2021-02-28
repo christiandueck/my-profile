@@ -1,0 +1,32 @@
+.container {
+    grid-area: position;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container > nav {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.container > nav > a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--dark-gray);
+    font-weight: 300;
+}
+
+.container > nav > a::after {
+    padding-left: 0.25rem;
+    content: '/';
+    color: #3F3F41;
+}
+
+.container > nav > a:last-child::after {
+    content: '';
+    display: none;
+}
