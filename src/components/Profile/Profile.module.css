@@ -2,6 +2,7 @@
     grid-area: profile;
     display: flex;
     gap: 1.8rem;
+    min-width: 21rem;
 }
 
 .container > img {

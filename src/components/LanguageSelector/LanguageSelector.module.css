@@ -56,3 +56,37 @@
     top: 10%;
     right: 0;
 }
+
+@media(max-width: 720px) {
+    .container {
+        flex-direction: row-reverse;
+        margin-bottom: 0.5rem;
+    }
+
+    .container > h4,
+    .container > nav > a {
+        display: none;
+    }
+
+    .container > nav {
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+
+    .container > nav > a.active {
+        display: initial;
+    }
+
+    .container > span {
+        align-self: center;
+        padding-right: 1.6rem;
+    }
+    
+    .container > span::after {
+        content: '→';
+        font-size: 130%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

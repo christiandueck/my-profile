@@ -19,3 +19,17 @@
   row-gap: 3rem;
   margin-bottom: 3rem;
 }
+
+@media(max-width: 720px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .container > header {
+    grid-template-areas:
+      "language"
+      "profile"
+      "position";
+    row-gap: 1.7rem;
+  }
+}
