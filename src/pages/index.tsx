@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { openDB } from '../lib/openDB';
 import { LanguageSelector } from "../components/LanguageSelector/LanguageSelector";
 import { Profile } from "../components/Profile/Profile";
 import { Position } from "../components/Position/Position";
@@ -7,7 +8,7 @@ import styles from '../styles/pages/Home.module.css';
 import { ContentBlock } from "../components/ContentBlock/ContentBlock";
 import { Experience } from "../components/ContentBlock/Experience/Experience";
 
-export default function Home() {
+export default function Home({ profile }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -84,4 +85,16 @@ export default function Home() {
     </div>
 
   )
+}
+
+export async function getServerSideProps(context) {
+  const db = await openDB();
+
+  const data = await db.collection('profile').findOne();
+
+  return {
+    props: {
+      profile: JSON.parse(JSON.stringify(data)),
+    }
+  };
 }
