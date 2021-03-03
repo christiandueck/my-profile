@@ -16,7 +16,7 @@ export default function Home({ profile }) {
       </Head>
 
       <header>
-        <Profile />
+        <Profile profile={profile} />
         <LanguageSelector />
         <Position />
       </header>
