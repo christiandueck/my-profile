@@ -9,6 +9,7 @@ import { ContentBlock } from "../components/ContentBlock/ContentBlock";
 import { Experience } from "../components/ContentBlock/Experience/Experience";
 import { useContext } from "react";
 import { LanguagesContext } from "../contexts/LanguagesContext";
+import { Project } from "../components/ContentBlock/Experience/Project/Project";
 
 export default function Home() {
   const { content } = useContext(LanguagesContext);
@@ -45,9 +46,26 @@ export default function Home() {
           <Experience>
             <h5>Front-end web developer</h5>
             <p>
-              <em>for</em> <h6>personal projects</h6>
+              <em>as</em> <h6>Freelancer</h6>
               <span>Jan 2021 - Present</span>
             </p>
+            <Project
+              title="move.it"
+              subTitle="Next.js app"
+              text="Project developed during Rocketseat's Next Level Week #4 event. I went beyond the initial scope and made the application responsive for mobile devices, animation on the active cycle button, in addition to creating the login and Leaderboard screens."
+              link={[
+                {
+                  type: "web",
+                  text: "Live Sample",
+                  url: "https://moveit.dueck.app"
+                },
+                {
+                  type: "github",
+                  text: "GitHub repository",
+                  url: "https://github.com/christiandueck/move.it"
+                },
+              ]}
+            ></Project>
           </Experience>
 
           <Experience>

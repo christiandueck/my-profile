@@ -37,6 +37,6 @@ export function LanguagesProvider({
             content
         }}
     >
-        {children};
+        {children}
     </LanguagesContext.Provider>
 }
