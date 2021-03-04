@@ -1,11 +1,13 @@
 .experience {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .experience p {
     display: flex;
     font-weight: 300;
+    flex-wrap: wrap;
 }
 
 .experience h6 {

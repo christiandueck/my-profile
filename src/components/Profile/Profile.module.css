@@ -6,8 +6,8 @@
 }
 
 .container > img {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     border: 2px solid transparent;
     background: linear-gradient(135deg, #46A29F 0%, #66FCF1 100%);
@@ -25,27 +25,23 @@
 }
 
 .container .data > nav {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
-.container .data > nav > a {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    font-size: 0.8rem;
-    color: var(--light-gray);
-    cursor: pointer;
-
-    transition: 0.2s;
+@media(max-width: 1080px) {
+    .container > img {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
 }
 
-.container .data > nav > a:hover {
-    color: var(--white);
-}
-
-.container .data > nav > a:hover > svg > path {
-    fill: var(--white);
+@media(max-width: 720px) {
+    .container > img {
+        width: 6rem;
+        height: 6rem;
+    }
 }

@@ -1,15 +1,14 @@
 import Head from "next/head";
-import { openDB } from '../lib/openDB';
-import { LanguageSelector } from "../components/LanguageSelector/LanguageSelector";
-import { Profile } from "../components/Profile/Profile";
-import { Position } from "../components/Position/Position";
+import { LanguageSelector } from "../components/LanguageSelector";
+import { Profile } from "../components/Profile";
+import { Position } from "../components/Position";
 
 import styles from '../styles/pages/Home.module.css';
-import { ContentBlock } from "../components/ContentBlock/ContentBlock";
-import { Experience } from "../components/ContentBlock/Experience/Experience";
+import { ContentBlock } from "../components/ContentBlock";
+import { Experience } from "../components/Experience";
 import { useContext } from "react";
 import { LanguagesContext } from "../contexts/LanguagesContext";
-import { Project } from "../components/ContentBlock/Experience/Project/Project";
+import { Project } from "../components/Project";
 
 export default function Home() {
   const { content } = useContext(LanguagesContext);
@@ -22,9 +21,52 @@ export default function Home() {
       </Head>
 
       <header>
-        <Profile content={newContent} />
+        <Profile
+          name="Christian Dueck"
+          email="christian@dueck.com.br"
+          links={[
+            {
+              "type": "github",
+              "text": "GitHub",
+              "url": "https://github.com/christiandueck"
+            },
+            {
+              "type": "linkedin",
+              "text": "LinkedIn",
+              "url": "https://www.linkedin.com/in/christiandueck"
+            }
+          ]}
+        />
         <LanguageSelector />
-        <Position />
+        <Position
+          title="Front-end web developer"
+          skills={[
+            {
+              "name": "HTML",
+              "icon": "html5.svg"
+            },
+            {
+              "name": "CSS",
+              "icon": "css3.svg"
+            },
+            {
+              "name": "Javascript",
+              "icon": "javascript.svg"
+            },
+            {
+              "name": "React",
+              "icon": "react.svg"
+            },
+            {
+              "name": "Next.js",
+              "icon": "nextjs.svg"
+            },
+            {
+              "name": "Git",
+              "icon": "git.svg"
+            }
+          ]}
+        />
       </header>
 
       <main>
@@ -53,7 +95,7 @@ export default function Home() {
               title="move.it"
               subTitle="Next.js app"
               text="Project developed during Rocketseat's Next Level Week #4 event. I went beyond the initial scope and made the application responsive for mobile devices, animation on the active cycle button, in addition to creating the login and Leaderboard screens."
-              link={[
+              links={[
                 {
                   type: "web",
                   text: "Live Sample",

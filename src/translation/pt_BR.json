@@ -18,11 +18,11 @@
         "skill": [
             {
                 "name": "HTML",
-                "icon": "html.svg"
+                "icon": "html5.svg"
             },
             {
                 "name": "CSS",
-                "icon": "css.svg"
+                "icon": "css3.svg"
             },
             {
                 "name": "Javascript",
