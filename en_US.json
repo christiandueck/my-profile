@@ -1,0 +1,220 @@
+{
+    "profile": {
+        "name": "Christian Dueck",
+        "email": "christian@dueck.com.br",
+        "link": [
+            {
+                "type": "github",
+                "url": "https://github.com/christiandueck"
+            },
+            {
+                "type": "linkedin",
+                "url": "https://www.linkedin.com/in/christiandueck"
+            }
+        ]
+    },
+    "header": {
+        "function": "Front-end web developer",
+        "skill": [
+            {
+                "name": "HTML",
+                "icon": "html.svg"
+            },
+            {
+                "name": "CSS",
+                "icon": "css.svg"
+            },
+            {
+                "name": "Javascript",
+                "icon": "javascript.svg"
+            },
+            {
+                "name": "React",
+                "icon": "reacta.svg"
+            },
+            {
+                "name": "Next.js",
+                "icon": "nextjs.svg"
+            },
+            {
+                "name": "MySQL",
+                "icon": "mysql.svg"
+            },
+            {
+                "name": "MongoDB",
+                "icon": "mongodb.svg"
+            },
+            {
+                "name": "Git",
+                "icon": "git.svg"
+            }
+        ]
+    },
+    "language": {
+        "title": "Languages",
+        "selectorTitle": "Fluency in",
+        "items": [
+            {
+                "title": "Deutsch",
+                "translatedTitle": "German",
+                "text": "Bilingual proficiency",
+                "icon": "./flags/germany.svg",
+                "link": "/de_DE"
+            },
+            {
+                "title": "English",
+                "translatedTitle": "English",
+                "text": "Professional working proficiency",
+                "icon": "./flags/usa.svg",
+                "link": "/"
+            },
+            {
+                "title": "Português",
+                "translatedTitle": "Portuguese",
+                "text": "Native proficiency",
+                "icon": "./flags/brazil.svg",
+                "link": "/pt_BR"
+            }
+        ]
+    },
+    "personal_statement": {
+        "title": "Personal statement",
+        "content": "Working with web developmen since 2020, I have maintained C# web applications. I entedered in the development industry working mostly as back-end developer, but my passion is to be a front-end developer. Currently working in personal projects based on Next.js."
+    },
+    "working_experience": {
+        "title": "Working experience",
+        "items": [
+            {
+                "title": "Front-end web developer",
+                "organization": "personal projects",
+                "organizationPrefix": "in",
+                "period": "Jan 2021 - Present",
+                "subItems": [
+                    {
+                        "title": "move.it",
+                        "subtitle": "Next.js application",
+                        "content": "Project developed during Rocketseat's Next Level Week # 4 event. I went beyond the initial scope and made the application responsive for mobile devices, animation on the active cycle button, in addition to creating the login and Leaderboard screens.",
+                        "link": [
+                            {
+                                "type": "web",
+                                "text": "Live Preview",
+                                "url": "https://moveit.dueck.app"
+                            },
+                            {
+                                "type": "github",
+                                "text": "GitHub repository",
+                                "url": "https://github.com/christiandueck/move.it"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Back-end web developer",
+                "organization": "Chleba Digital Agency",
+                "organizationPrefix": "at",
+                "period": "Jan 2021 - Present",
+                "content": "Maintenance in e-commerce applications and implementation of LGPD (Lei Geral de Proteção de Dados) rules. Integration with external API.",
+                "link": [
+                    {
+                        "type": "web",
+                        "text": "Chleba",
+                        "url": "https://www.chleba.net"
+                    }
+                ]
+            },
+            {
+                "title": "Fullstack web developer",
+                "organization": "Brose do Brasil Ltda",
+                "organizationPrefix": "at",
+                "period": "Feb 2012 - Jan 2021",
+                "content": "Maintenance and implementation of new features in internal web applications.",
+                "link": [
+                    {
+                        "type": "web",
+                        "text": "Brose",
+                        "url": "https://www.brose.com/de-en/"
+                    }
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Education",
+        "items": [
+            {
+                "title": "Front-en ReactJS developer",
+                "organization": "Rocketseat",
+                "organizationPrefix": "at",
+                "period": "Mar 2021 - Apr 2021",
+                "content": "6 weeks course with deep study in ReactJS and Next.js, with CMS, authentication anda database integrations.",
+                "link": [
+                    {
+                        "type": "web",
+                        "text": "Rocketseat",
+                        "url": "https://rocketseat.com.br"
+                    },
+                    {
+                        "type": "linkedin",
+                        "text": "Rocketseat",
+                        "url": "https://www.linkedin.com/school/rocketseat"
+                    }
+                ]
+            },
+            {
+                "title": "Technology in Systems Analysis and Development",
+                "organization": "[UFPR] Federal University of Paraná, Brazil",
+                "organizationPrefix": "at",
+                "period": "Jul 2018 - Dec 2021",
+                "content": "Graduation.",
+                "link": [
+                    {
+                        "type": "web",
+                        "text": "UFPR",
+                        "url": "https://www.ufpr.br"
+                    },
+                    {
+                        "type": "linkedin",
+                        "text": "UFPR",
+                        "url": "https://www.linkedin.com/school/ufpr"
+                    }
+                ]
+            }
+        ]
+    },
+    "footer": {
+        "button": [
+            {
+                "name": "Contact",
+                "title": "Contact"
+            }
+        ],
+        "content": "This page was designed and developed by Christian Dueck using the technologies",
+        "technology": [
+            {
+                "name": "HTML",
+                "icon": "html.svg"
+            },
+            {
+                "name": "CSS",
+                "icon": "css.svg"
+            },
+            {
+                "name": "Javascript",
+                "icon": "javascript.svg"
+            }
+        ],
+        "link": [
+            {
+                "type": "figma",
+                "text": "Figma Layout",
+                "url": "#"
+            },
+            {
+                "type": "github",
+                "text": "GitHub repository",
+                "url": "#"
+            }
+        ]
+    }
+}
