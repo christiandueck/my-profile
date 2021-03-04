@@ -7,8 +7,13 @@ import { Position } from "../components/Position/Position";
 import styles from '../styles/pages/Home.module.css';
 import { ContentBlock } from "../components/ContentBlock/ContentBlock";
 import { Experience } from "../components/ContentBlock/Experience/Experience";
+import { useContext } from "react";
+import { LanguagesContext } from "../contexts/LanguagesContext";
 
-export default function Home({ profile }) {
+export default function Home() {
+  const { content } = useContext(LanguagesContext);
+  const newContent = content();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,7 +21,7 @@ export default function Home({ profile }) {
       </Head>
 
       <header>
-        <Profile profile={profile} />
+        <Profile content={newContent} />
         <LanguageSelector />
         <Position />
       </header>
@@ -85,39 +90,4 @@ export default function Home({ profile }) {
     </div>
 
   )
-}
-
-export async function getServerSideProps(context) {
-  //const db = await openDB();
-
-  //const data = await db.collection('profile').findOne();
-
-  const data = {
-    "name": "Christian Dueck",
-    "email": "christian@dueck.com.br",
-    "link": [
-      {
-        "type": "github",
-        "url": {
-          "portuguese": "https://github.com/christiandueck",
-          "english": "https://github.com/christiandueck",
-          "german": "https://github.com/christiandueck"
-        }
-      },
-      {
-        "type": "linkedin",
-        "url": {
-          "portuguese": "https://www.linkedin.com/in/christiandueck/pt_BR",
-          "english": "https://www.linkedin.com/in/christiandueck",
-          "german": "https://www.linkedin.com/in/christiandueck/de_DE"
-        }
-      }
-    ]
-  }
-
-  return {
-    props: {
-      profile: JSON.parse(JSON.stringify(data)),
-    }
-  };
 }

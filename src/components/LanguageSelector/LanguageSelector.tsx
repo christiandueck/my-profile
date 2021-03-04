@@ -1,7 +1,10 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { LanguagesContext, LanguagesProvider } from '../../contexts/LanguagesContext';
 import styles from './LanguageSelector.module.css';
 
 export function LanguageSelector() {
+    const { activeLanguage } = useContext(LanguagesContext);
+
     const [language, setLanguage] = useState('en');
     const [isLanguageMenuVisible, setIsLanguageMenuVisible] = useState(false);
 

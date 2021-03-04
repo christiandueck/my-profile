@@ -3,9 +3,8 @@ import { useContext } from 'react';
 
 import styles from './Profile.module.css';
 
-export function Profile({ profile }) {
-    const language = "portuguese"
-
+export function Profile({ content }) {
+    //console.log('profile name:', content.profile.name);
     /*console.log(profile);
     console.log(profile.link[0])
     console.log(profile.link[0].url.portuguese);*/
@@ -15,8 +14,8 @@ export function Profile({ profile }) {
             <img src="https://github.com/christiandueck.png" alt="Profile Picture" />
 
             <div className={styles.data}>
-                <h1>{profile.name}</h1>
-                <p>{profile.email}</p>
+                <h1>Christian Dueck</h1>
+                <p>christian@dueck.com.br</p>
                 <nav>
                     <Link href="#">
                         <a target="_blank">
