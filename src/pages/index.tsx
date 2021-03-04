@@ -88,9 +88,32 @@ export default function Home({ profile }) {
 }
 
 export async function getServerSideProps(context) {
-  const db = await openDB();
+  //const db = await openDB();
 
-  const data = await db.collection('profile').findOne();
+  //const data = await db.collection('profile').findOne();
+
+  const data = {
+    "name": "Christian Dueck",
+    "email": "christian@dueck.com.br",
+    "link": [
+      {
+        "type": "github",
+        "url": {
+          "portuguese": "https://github.com/christiandueck",
+          "english": "https://github.com/christiandueck",
+          "german": "https://github.com/christiandueck"
+        }
+      },
+      {
+        "type": "linkedin",
+        "url": {
+          "portuguese": "https://www.linkedin.com/in/christiandueck/pt_BR",
+          "english": "https://www.linkedin.com/in/christiandueck",
+          "german": "https://www.linkedin.com/in/christiandueck/de_DE"
+        }
+      }
+    ]
+  }
 
   return {
     props: {
