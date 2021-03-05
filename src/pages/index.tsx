@@ -35,6 +35,7 @@ export default function Home() {
         <ContentBlock content={personal_statement} />
         <ContentBlock content={working_experience} />
         <ContentBlock content={education} />
+        <ContentBlock content={language} />
       </main>
 
     </div >

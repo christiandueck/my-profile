@@ -29,3 +29,16 @@
 .mt1 {
     margin-top: 1rem;
 }
+
+.experience .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27.25rem, 1fr));
+    gap: 2rem;
+}
+
+@media(max-width: 720px) {
+    .experience .projects {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+}

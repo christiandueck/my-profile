@@ -3,7 +3,7 @@ import { LanguagesContext, LanguagesProvider } from '../../contexts/LanguagesCon
 import styles from './LanguageSelector.module.css';
 
 export function LanguageSelector({ languages }) {
-    const { content, changeToen_US, changeTopt_BR } = useContext(LanguagesContext);
+    const { changeToen_US, changeTopt_BR, changeTode_DE } = useContext(LanguagesContext);
 
     const [language, setLanguage] = useState('en_US');
     const [isLanguageMenuVisible, setIsLanguageMenuVisible] = useState(false);
@@ -14,6 +14,9 @@ export function LanguageSelector({ languages }) {
         switch (language) {
             case 'pt_BR':
                 changeTopt_BR();
+                break;
+            case 'de_DE':
+                changeTode_DE();
                 break;
             default:
                 changeToen_US();
@@ -31,22 +34,18 @@ export function LanguageSelector({ languages }) {
 
             <div className={styles.container}>
 
-                <h4>{languages.selectorTitle}</h4>
-
                 <nav>
                     {languages.items?.map((item) => {
                         return (
                             <a
                                 className={language == item.code ? styles.active : styles.empty}
                                 onClick={() => changeLanguage(item.code)}
-                            >{item.title}</a>
+                            >{item.translatedTitle}</a>
                         );
                     })}
                 </nav>
 
-                <span>
-                    {languages.helper}
-                </span>
+                <span></span>
             </div>
 
             <div
@@ -57,7 +56,7 @@ export function LanguageSelector({ languages }) {
                         return (<a
                             className={language == item.code ? styles.active : styles.empty}
                             onClick={() => changeLanguage(item.code)}
-                        >{item.title}</a>);
+                        >{item.translatedTitle}</a>);
                     })}
                 </nav>
             </div>

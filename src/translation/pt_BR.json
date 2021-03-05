@@ -50,25 +50,25 @@
         "helper": "selecione o idioma do conteúdo",
         "items": [
             {
-                "title": "Deutsch",
-                "translatedTitle": "Alemão",
-                "text": "Proficiência bilíngue",
+                "translatedTitle": "Deutsch",
+                "title": "Alemão",
+                "content": "Proficiência bilíngue",
                 "code": "de_DE",
                 "icon": "./flags/germany.svg",
                 "link": "/de_DE"
             },
             {
-                "title": "English",
-                "translatedTitle": "Inglês",
-                "text": "Proficiência profissional",
+                "translatedTitle": "English",
+                "title": "Inglês",
+                "content": "Proficiência profissional",
                 "code": "en_US",
                 "icon": "./flags/usa.svg",
                 "link": "/"
             },
             {
-                "title": "Português",
                 "translatedTitle": "Português",
-                "text": "Proficiência nativa",
+                "title": "Português",
+                "content": "Proficiência nativa",
                 "code": "pt_BR",
                 "icon": "./flags/brazil.svg",
                 "link": "/pt_BR"
@@ -102,6 +102,23 @@
                                 "type": "github",
                                 "text": "Repositório GitHub",
                                 "url": "https://github.com/christiandueck/move.it"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Christian Dueck web profile",
+                        "subtitle": "Aplicação em Next.js",
+                        "content": "Currículo virtual multilingue desenhado e desenvolvido para praticar os conhecimentos de Next.js.",
+                        "links": [
+                            {
+                                "type": "github",
+                                "text": "Repositório GitHub",
+                                "url": "https://github.com/christiandueck/my-profile"
+                            },
+                            {
+                                "type": "figma",
+                                "text": "Projeto Figma",
+                                "url": "https://www.figma.com/file/8XD0ZfrKDEGnDDsGlURJp7"
                             }
                         ]
                     }

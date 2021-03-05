@@ -50,25 +50,25 @@
         "helper": "choose content language",
         "items": [
             {
-                "title": "Deutsch",
-                "translatedTitle": "German",
-                "text": "Bilingual proficiency",
+                "translatedTitle": "Deutsch",
+                "title": "German",
+                "content": "Bilingual proficiency",
                 "code": "de_DE",
                 "icon": "./flags/germany.svg",
                 "link": "/de_DE"
             },
             {
-                "title": "English",
                 "translatedTitle": "English",
-                "text": "Professional working proficiency",
+                "title": "English",
+                "content": "Professional working proficiency",
                 "code": "en_US",
                 "icon": "./flags/usa.svg",
                 "link": "/"
             },
             {
-                "title": "Português",
-                "translatedTitle": "Portuguese",
-                "text": "Native proficiency",
+                "translatedTitle": "Português",
+                "title": "Portuguese",
+                "content": "Native proficiency",
                 "code": "pt_BR",
                 "icon": "./flags/brazil.svg",
                 "link": "/pt_BR"
@@ -84,14 +84,14 @@
         "items": [
             {
                 "title": "Front-end web developer",
-                "organization": "personal projects",
-                "organizationPrefix": "in",
+                "organization": "Freelancer",
+                "organizationPrefix": "as",
                 "period": "Jan 2021 - Present",
                 "subItems": [
                     {
                         "title": "move.it",
                         "subtitle": "Next.js application",
-                        "content": "Project developed during Rocketseat's Next Level Week # 4 event. I went beyond the initial scope and made the application responsive for mobile devices, animation on the active cycle button, in addition to creating the login and Leaderboard screens.",
+                        "content": "Project developed during Rocketseat's Next Level Week #4 event. I went beyond the initial scope and made the application responsive for mobile devices, animation on the active cycle button, in addition to creating the login and Leaderboard screens.",
                         "links": [
                             {
                                 "type": "web",
@@ -104,6 +104,23 @@
                                 "url": "https://github.com/christiandueck/move.it"
                             }
                         ]
+                    },
+                    {
+                        "title": "Christian Dueck web profile",
+                        "subtitle": "Aplicação em Next.js",
+                        "content": "Currículo virtual multilingue desenhado e desenvolvido para praticar os conhecimentos de Next.js.",
+                        "links": [
+                            {
+                                "type": "github",
+                                "text": "Repositório GitHub",
+                                "url": "https://github.com/christiandueck/my-profile"
+                            },
+                            {
+                                "type": "figma",
+                                "text": "Projeto Figma",
+                                "url": "https://www.figma.com/file/8XD0ZfrKDEGnDDsGlURJp7"
+                            }
+                        ]
                     }
                 ]
             },
@@ -112,7 +129,7 @@
                 "organization": "Chleba Digital Agency",
                 "organizationPrefix": "at",
                 "period": "Jan 2021 - Present",
-                "content": "Maintenance in e-commerce applications and implementation of LGPD (Lei Geral de Proteção de Dados) rules. Integration with external API.",
+                "content": "Maintenance in e-commerce applications and implementation of LGPD (General Data Protection Law) rules. Integration with external API.",
                 "links": [
                     {
                         "type": "web",
@@ -141,7 +158,7 @@
         "title": "Education",
         "items": [
             {
-                "title": "Front-en ReactJS developer",
+                "title": "Front-end ReactJS developer",
                 "organization": "Rocketseat",
                 "organizationPrefix": "at",
                 "period": "Mar 2021 - Apr 2021",

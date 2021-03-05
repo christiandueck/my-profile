@@ -2,39 +2,29 @@
     "profile": {
         "name": "Christian Dueck",
         "email": "christian@dueck.com.br",
-        "link": [
+        "links": [
             {
                 "type": "github",
-                "url": {
-                    "portuguese": "https://github.com/christiandueck",
-                    "english": "https://github.com/christiandueck",
-                    "german": "https://github.com/christiandueck"
-                }
+                "text": "GitHub",
+                "url": "https://github.com/christiandueck"
             },
             {
                 "type": "linkedin",
-                "url": {
-                    "portuguese": "https://www.linkedin.com/in/christiandueck/pt_BR",
-                    "english": "https://www.linkedin.com/in/christiandueck",
-                    "german": "https://www.linkedin.com/in/christiandueck/de_DE"
-                }
+                "text": "LinkedIn",
+                "url": "https://www.linkedin.com/in/christiandueck/de_DE"
             }
         ]
     },
     "header": {
-        "function": {
-            "portuguese": "Desenvolvedor web front-end",
-            "english": "Front-end web developer",
-            "german": "Front-End-Webentwickler"
-        },
-        "skill": [
+        "function": "Front-End-Webentwickler",
+        "skills": [
             {
                 "name": "HTML",
-                "icon": "html.svg"
+                "icon": "html5.svg"
             },
             {
                 "name": "CSS",
-                "icon": "css.svg"
+                "icon": "css3.svg"
             },
             {
                 "name": "Javascript",
@@ -42,19 +32,11 @@
             },
             {
                 "name": "React",
-                "icon": "reacta.svg"
+                "icon": "react.svg"
             },
             {
                 "name": "Next.js",
                 "icon": "nextjs.svg"
-            },
-            {
-                "name": "MySQL",
-                "icon": "mysql.svg"
-            },
-            {
-                "name": "MongoDB",
-                "icon": "mongodb.svg"
             },
             {
                 "name": "Git",
@@ -62,222 +44,167 @@
             }
         ]
     },
-    "section": [
-        {
-            "name:": "language",
-            "title": {
-                "portuguese": "Fluente em",
-                "english": "Fluency in",
-                "german": "Fliessend in"
+    "language": {
+        "title": "Sprachen",
+        "selectorTitle": "Fließend in:",
+        "helper": "Wählen Sie die Sprache des Inhalts",
+        "items": [
+            {
+                "translatedTitle": "Deutsch",
+                "title": "Deutsch",
+                "content": "Zweisprachig",
+                "code": "de_DE",
+                "icon": "./flags/germany.svg",
+                "link": "/de_DE"
             },
-            "item": [
-                {
-                    "title": {
-                        "portuguese": "Português",
-                        "english": "Inglês",
-                        "german": "Alemão"
-                    }
-                }
-            ]
-        },
-        {
-            "name:": "personal_statement",
-            "title": {
-                "portuguese": "Declaração pessoal",
-                "english": "Personal statement",
-                "german": "Persönliche Meinung"
+            {
+                "translatedTitle": "English",
+                "title": "English",
+                "content": "Fließend",
+                "code": "en_US",
+                "icon": "./flags/usa.svg",
+                "link": "/"
             },
-            "item": [
-                {
-                    "content": {
-                        "portuguese": "Trabalho com desenvolvedores web desde 2020, mantenho aplicativos web C #. Entrei na indústria de desenvolvimento trabalhando principalmente como desenvolvedor back-end, mas minha paixão é ser um desenvolvedor front-end. Atualmente trabalhando em projetos pessoais baseados em Next.js, com MongoDB.",
-                        "english": "Working with web developmen since 2020, I have maintained C# web applications. I entedered in the development industry working mostly as back-end developer, but my passion is to be a front-end developer. Currently working in personal projects based on Next.js, with MongoDB.",
-                        "german": "Ich arbeite seit 2020 mit Webentwicklern zusammen und habe C # -Webanwendungen gepflegt. Ich habe in der Entwicklungsbranche gearbeitet und hauptsächlich als Back-End-Entwickler gearbeitet, aber meine Leidenschaft ist es, Front-End-Entwickler zu sein. Derzeit arbeitet er mit MongoDB an persönlichen Projekten, die auf Next.js basieren."
+            {
+                "translatedTitle": "Português",
+                "title": "Portugiesisch",
+                "content": "Muttersprache",
+                "code": "pt_BR",
+                "icon": "./flags/brazil.svg",
+                "link": "/pt_BR"
+            }
+        ]
+    },
+    "personal_statement": {
+        "title": "Persönliche Aussage",
+        "content": "Ich arbeite seit 2020 mit Webentwicklern zusammen und habe C#-Webanwendungen gepflegt. Ich habe in der Entwicklungsbranche gearbeitet und hauptsächlich als Back-End-Entwickler gearbeitet, aber meine Leidenschaft ist es, Front-End-Entwickler zu sein. Derzeit arbeitet er in persönlichen Projekten, die auf Next.js basieren."
+    },
+    "working_experience": {
+        "title": "Arbeitserfahrung",
+        "items": [
+            {
+                "title": "Front-End-Webentwickler",
+                "organization": "Freiberufler",
+                "organizationPrefix": "als",
+                "period": "Jan 2021 - Heute",
+                "subItems": [
+                    {
+                        "title": "move.it",
+                        "subtitle": "Next.js App",
+                        "content": "Projekt entwickelt während Rocketseats Next Level Week #4 Event. Ich ging über den ursprünglichen Bereich hinaus und ließ die Anwendung auf mobile Geräte reagieren, Animationen auf der Schaltfläche für den aktiven Zyklus sowie die Anmelde- und Bestenlistenbildschirme erstellen.",
+                        "links": [
+                            {
+                                "type": "web",
+                                "text": "Live Preview",
+                                "url": "https://moveit.dueck.app"
+                            },
+                            {
+                                "type": "github",
+                                "text": "GitHub repository",
+                                "url": "https://github.com/christiandueck/move.it"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Christian Dueck web profile",
+                        "subtitle": "Aplicação em Next.js",
+                        "content": "Currículo virtual multilingue desenhado e desenvolvido para praticar os conhecimentos de Next.js.",
+                        "links": [
+                            {
+                                "type": "github",
+                                "text": "Repositório GitHub",
+                                "url": "https://github.com/christiandueck/my-profile"
+                            },
+                            {
+                                "type": "figma",
+                                "text": "Projeto Figma",
+                                "url": "https://www.figma.com/file/8XD0ZfrKDEGnDDsGlURJp7"
+                            }
+                        ]
                     }
-                }
-            ]
-        },
-        {
-            "name:": "working_experience",
-            "title": {
-                "portuguese": "Experiência profissional",
-                "english": "Working experience",
-                "german": "Arbeitserfahrung"
+                ]
             },
-            "item": [
-                {
-                    "title": {
-                        "portuguese": "Desenvolvedor web front-end",
-                        "english": "Front-end web developer",
-                        "german": "Front-End-Webentwickler"
-                    },
-                    "organization": {
-                        "portuguese": "projetos pessoais",
-                        "english": "personal projects",
-                        "german": "Persönliche projekte"
-                    },
-                    "organizationPrefix": {
-                        "portuguese": "em",
-                        "english": "in",
-                        "german": "in"
-                    },
-                    "period": {
-                        "portuguese": "Jan 2021 - Presente",
-                        "english": "Jan 2021 - Present",
-                        "german": "Jan 2021 - Heute"
-                    },
-                    "subItem": [
-                        {
-                            "title": {
-                                "portuguese": "Aplicativo Next.js triplanner",
-                                "english": "triplanner Next.js app",
-                                "german": "triplanner Next.js app"
-                            },
-                            "content": {
-                                "portuguese": "PWA (Progressive web application) desenvolvido para o planejamento de viagens pessoais, agregando informações de transporte, hospedagem ou atrações e calculando o valor total a ser gasto.",
-                                "english": "PWA (Progressive web application) developed for personal trip planning, adding transport, hosting or attractions information and calculating total amount to be spent.",
-                                "german": "PWA (Progressive Web Application) wurde für die persönliche Reiseplanung entwickelt, um Informationen zu Transport, Hosting oder Attraktionen hinzuzufügen und den Gesamtbetrag zu berechnen."
-                            },
-                            "link": [
-                                {
-                                    "type": "web",
-                                    "url": "#"
-                                },
-                                {
-                                    "type": "github",
-                                    "url": "#"
-                                }
-                            ]
-                        },
-                        {
-                            "title": {
-                                "portuguese": "Aplicativo Next.js fineck",
-                                "english": "fineck Next.js app",
-                                "german": "fineck Next.js app"
-                            },
-                            "content": {
-                                "portuguese": "PWA (Progressive web application) desenvolvido para controle de finanças pessoais. Possibilidade de adicionar, remover e editar transações, incluindo recursos avançados de gerenciamento de cartão de crédito.",
-                                "english": "PWA (Progressive web application) developed for personal finance control. Possibility to add, remove and edit transactions, including advanced credit-card management features.",
-                                "german": "PWA (Progressive Web Application) wurde für die persönliche Finanzkontrolle entwickelt. Möglichkeit zum Hinzufügen, Entfernen und Bearbeiten von Transaktionen, einschließlich erweiterter Funktionen zur Kreditkartenverwaltung."
-                            },
-                            "link": [
-                                {
-                                    "type": "web",
-                                    "url": "#"
-                                },
-                                {
-                                    "type": "github",
-                                    "url": "#"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "title": {
-                        "portuguese": "Desenvolvedor web back-end",
-                        "english": "Back-end web developer",
-                        "german": "Backend-Webentwickler"
-                    },
-                    "organization": {
-                        "portuguese": "Chleba Agência Digital",
-                        "english": "Chleba Digital Agency",
-                        "german": "Chleba Digital Agency"
-                    },
-                    "organizationPrefix": {
-                        "portuguese": "na",
-                        "english": "at",
-                        "german": "bei"
-                    },
-                    "period": {
-                        "portuguese": "Jan 2021 - Presente",
-                        "english": "Jan 2021 - Present",
-                        "german": "Jan 2021 - Heute"
-                    },
-                    "content": {
-                        "portuguese": "Manutenção em aplicativos de e-commerce e implantação de normas da LGPD (Lei Geral de Proteção de Dados). Integração com API externa.",
-                        "english": "Maintenance in e-commerce applications and implementation of LGPD (Lei Geral de Proteção de Dados) rules. Integration with external API.",
-                        "german": "Wartung in E-Commerce-Anwendungen und Implementierung der LGPD-Regeln (General Data Protection Law). Integration mit externer API."
+            {
+                "title": "Backend-Webentwickler",
+                "organization": "Chleba Digitale Agentur",
+                "organizationPrefix": "bei",
+                "period": "Jan 2021 - Heute",
+                "content": "Wartung in E-Commerce-Anwendungen und Implementierung der LGPD-Regeln (Allgemeines Datenschutzgesetz). Integration mit externer API.",
+                "links": [
+                    {
+                        "type": "web",
+                        "text": "Chleba",
+                        "url": "https://www.chleba.net"
                     }
-                },
-                {
-                    "title": {
-                        "portuguese": "Desenvolvedor web back-end",
-                        "english": "Back-end web developer",
-                        "german": "Backend-Webentwickler"
-                    },
-                    "organization": {
-                        "portuguese": "Brose do Brasil Ltda",
-                        "english": "Brose do Brasil Ltda",
-                        "german": "Brose do Brasil Ltda"
-                    },
-                    "organizationPrefix": {
-                        "portuguese": "na",
-                        "english": "at",
-                        "german": "bei"
-                    },
-                    "period": {
-                        "portuguese": "Fev 2012 - Jan 2021",
-                        "english": "Feb 2012 - Jan 2021",
-                        "german": "Feb 2012 - Jan 2021"
-                    },
-                    "content": {
-                        "portuguese": "Manutenção e implementação de novas funcionalidades em aplicações web internas.",
-                        "english": "Maintenance and implementation of new features in internal web applications.",
-                        "german": "Wartung und Implementierung neuer Funktionen in internen Webanwendungen."
-                    }
-                }
-            ]
-        },
-        {
-            "name:": "education",
-            "title": {
-                "portuguese": "Educação",
-                "english": "Education",
-                "german": "Bildung"
+                ]
             },
-            "item": [
-                {
-                    "title": {
-                        "portuguese": "Tecnologia em Análise e Desenvolvimento de Sistemas",
-                        "english": "Technology in Systems Analysis and Development",
-                        "german": "Technologie in der Systemanalyse und -entwicklung"
-                    },
-                    "organization": {
-                        "portuguese": "[UFPR] Universidade Federal do Paraná, Brasil",
-                        "english": "[UFPR] Federal University of Paraná, Brazil",
-                        "german": "[UFPR] Bundesuniversität von Paraná, Brasilien"
-                    },
-                    "organizationPrefix": {
-                        "portuguese": "na",
-                        "english": "at",
-                        "german": "bei"
-                    },
-                    "period": {
-                        "portuguese": "Jul 2018 - Dez 2021",
-                        "english": "Jul 2018 - Dec 2021",
-                        "german": "Jul 2018 - Dez 2021"
+            {
+                "title": "Full Stack Webentwickler",
+                "organization": "Brose do Brasil Ltda",
+                "organizationPrefix": "bei",
+                "period": "Feb 2012 - Jan 2021",
+                "content": "Wartung und Implementierung neuer Funktionen in internen Webanwendungen.",
+                "links": [
+                    {
+                        "type": "web",
+                        "text": "Brose",
+                        "url": "https://www.brose.com/de-en/"
                     }
-                }
-            ]
-        }
-    ],
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Bildung",
+        "items": [
+            {
+                "title": "Front-End ReactJS-Entwickler",
+                "organization": "Rocketseat",
+                "organizationPrefix": "bei",
+                "period": "Mar 2021 - Apr 2021",
+                "content": "6-wöchiger Kurs mit tiefem Studium in ReactJS und Next.js, mit CMS, Authentifizierung und Datenbankintegration.",
+                "links": [
+                    {
+                        "type": "web",
+                        "text": "Rocketseat",
+                        "url": "https://rocketseat.com.br"
+                    },
+                    {
+                        "type": "linkedin",
+                        "text": "Rocketseat",
+                        "url": "https://www.linkedin.com/school/rocketseat"
+                    }
+                ]
+            },
+            {
+                "title": "Technologie in Systemanalyse und -entwicklung",
+                "organization": "[UFPR] Bundesuniversität von Paraná, Brasilien",
+                "organizationPrefix": "bei",
+                "period": "Jul 2018 - Dez 2021",
+                "content": "Graduierung.",
+                "links": [
+                    {
+                        "type": "web",
+                        "text": "UFPR",
+                        "url": "https://www.ufpr.br"
+                    },
+                    {
+                        "type": "linkedin",
+                        "text": "UFPR",
+                        "url": "https://www.linkedin.com/school/ufpr"
+                    }
+                ]
+            }
+        ]
+    },
     "footer": {
         "button": [
             {
                 "name": "Contact",
-                "title": {
-                    "portuguese": "Contato",
-                    "english": "Contact",
-                    "german": "Kontakt"
-                }
+                "title": "Kontakt"
             }
         ],
-        "content": {
-            "portuguese": "Esta página foi desenha e desenvolvida por Christian Dueck utilizando as tecnologias",
-            "english": "This page was designed and developed by Christian Dueck using the technologies",
-            "german": "Diese Seite wurde von Christian Dueck unter Verwendung der Technologien entworfen und entwickelt"
-        },
+        "content": "Diese Seite wurde von Christian Dueck unter Verwendung der Technologien entworfen und entwickelt",
         "technology": [
             {
                 "name": "HTML",
@@ -292,57 +219,17 @@
                 "icon": "javascript.svg"
             }
         ],
-        "link": [
+        "links": [
             {
                 "type": "figma",
+                "text": "Figma Layout",
                 "url": "#"
             },
             {
                 "type": "github",
+                "text": "GitHub repository",
                 "url": "#"
             }
         ]
-    },
-    "linkTypes": [
-        {
-            "type": "figma",
-            "name": {
-                "portuguese": "Figma",
-                "english": "Figma",
-                "german": "Figma"
-            },
-            "nameShort": "Figma",
-            "icon": "figma.svg"
-        },
-        {
-            "type": "github",
-            "name": {
-                "portuguese": "Repositório GitHub",
-                "english": "GitHub repository",
-                "german": "GitHub-Repository"
-            },
-            "nameShort": "GitHub",
-            "icon": "github.svg"
-        },
-        {
-            "type": "web",
-            "name": {
-                "portuguese": "Amostra ao vivo",
-                "english": "Live sample",
-                "german": "Live-Probe"
-            },
-            "nameShort": "Web",
-            "icon": "web.svg"
-        },
-        {
-            "type": "linkedin",
-            "name": {
-                "portuguese": "LinkedIn",
-                "english": "LinkedIn",
-                "german": "LinkedIn"
-            },
-            "nameShort": "LinkedIn",
-            "icon": "linkedin.svg"
-        }
-    ]
+    }
 }

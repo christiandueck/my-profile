@@ -10,6 +10,7 @@ interface LanguagesContextData {
     content;
     changeTopt_BR: () => void;
     changeToen_US: () => void;
+    changeTode_DE: () => void;
 }
 
 interface LanguagesProviderPros {
@@ -41,12 +42,19 @@ export function LanguagesProvider({
         return;
     }
 
+    function changeTode_DE() {
+        setActiveLanguage("de_DE");
+        setContent(de_DE);
+        return;
+    }
+
     return <LanguagesContext.Provider
         value={{
             activeLanguage,
             content,
             changeTopt_BR,
-            changeToen_US
+            changeToen_US,
+            changeTode_DE,
         }}
     >
         {children}

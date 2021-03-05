@@ -25,6 +25,7 @@
 .container > nav > a,
 .languageMobileMenu > nav > a {
     font-size: 0.8rem;
+    font-weight: 600;
     color: var(--dark-gray);
 
     border: 1px solid var(--dark-gray);
@@ -58,6 +59,16 @@
     position: relative;
     padding-right: 1.4rem;
     font-weight: 300;
+    transition: 0.5s;
+}
+
+.container > span::before {
+    content: '';
+    animation-duration: 15s;
+    animation-name: helper;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
 }
 
 .container > span::after {
@@ -98,6 +109,58 @@
 .languageMobileMenu > nav > a {
     flex: 1;
     text-align: center;
+}
+
+@keyframes helper {
+    0% {
+        content: 'choose the content language';
+        opacity: 0;
+    }
+    2% {
+        content: 'choose the content language';
+        opacity: 1;
+    }
+    30% {
+        content: 'choose the content language';
+        opacity: 1;        
+    }
+    32% {
+        content: 'choose the content language';
+        opacity: 0;        
+    }
+    33% {
+        content: 'Wählen Sie die Sprache des Inhalts';
+        opacity: 0;
+    }
+    35% {
+        content: 'Wählen Sie die Sprache des Inhalts';
+        opacity: 1;
+    }
+    64% {
+        content: 'Wählen Sie die Sprache des Inhalts';
+        opacity: 1;
+    }
+    66% {
+        content: 'Wählen Sie die Sprache des Inhalts';
+        opacity: 0;
+    }
+    67% {
+        content: 'escolha o idioma do conteúdo';
+        opacity: 0;
+    }
+    69% {
+        content: 'escolha o idioma do conteúdo';
+        opacity: 1;
+    }
+    98% {
+        content: 'escolha o idioma do conteúdo';
+        opacity: 1;
+    }    
+    100% {
+        content: 'escolha o idioma do conteúdo';
+        opacity: 0;
+    }
+
 }
 
 @keyframes languageMenu {

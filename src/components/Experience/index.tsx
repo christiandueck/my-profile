@@ -15,9 +15,13 @@ export function Experience({ experience }) {
                     {experience.content}
                 </p>
             }
-            {experience.subItems?.map((project) => {
-                return <Project project={project} />
-            })}
+            {experience.subItems &&
+                <div className={styles.projects}>
+                    {experience.subItems?.map((project) => {
+                        return <Project project={project} />;
+                    })}
+                </div>
+            }
             {experience.links &&
                 <nav>
                     {experience.links.map((link) => {
