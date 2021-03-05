@@ -2,27 +2,29 @@
     "profile": {
         "name": "Christian Dueck",
         "email": "christian@dueck.com.br",
-        "link": [
+        "links": [
             {
                 "type": "github",
+                "text": "GitHub",
                 "url": "https://github.com/christiandueck"
             },
             {
                 "type": "linkedin",
+                "text": "LinkedIn",
                 "url": "https://www.linkedin.com/in/christiandueck"
             }
         ]
     },
     "header": {
         "function": "Front-end web developer",
-        "skill": [
+        "skills": [
             {
                 "name": "HTML",
-                "icon": "html.svg"
+                "icon": "html5.svg"
             },
             {
                 "name": "CSS",
-                "icon": "css.svg"
+                "icon": "css3.svg"
             },
             {
                 "name": "Javascript",
@@ -30,19 +32,11 @@
             },
             {
                 "name": "React",
-                "icon": "reacta.svg"
+                "icon": "react.svg"
             },
             {
                 "name": "Next.js",
                 "icon": "nextjs.svg"
-            },
-            {
-                "name": "MySQL",
-                "icon": "mysql.svg"
-            },
-            {
-                "name": "MongoDB",
-                "icon": "mongodb.svg"
             },
             {
                 "name": "Git",
@@ -52,12 +46,14 @@
     },
     "language": {
         "title": "Languages",
-        "selectorTitle": "Fluency in",
+        "selectorTitle": "Fluency in:",
+        "helper": "choose content language",
         "items": [
             {
                 "title": "Deutsch",
                 "translatedTitle": "German",
                 "text": "Bilingual proficiency",
+                "code": "de_DE",
                 "icon": "./flags/germany.svg",
                 "link": "/de_DE"
             },
@@ -65,6 +61,7 @@
                 "title": "English",
                 "translatedTitle": "English",
                 "text": "Professional working proficiency",
+                "code": "en_US",
                 "icon": "./flags/usa.svg",
                 "link": "/"
             },
@@ -72,6 +69,7 @@
                 "title": "Português",
                 "translatedTitle": "Portuguese",
                 "text": "Native proficiency",
+                "code": "pt_BR",
                 "icon": "./flags/brazil.svg",
                 "link": "/pt_BR"
             }
@@ -94,7 +92,7 @@
                         "title": "move.it",
                         "subtitle": "Next.js application",
                         "content": "Project developed during Rocketseat's Next Level Week # 4 event. I went beyond the initial scope and made the application responsive for mobile devices, animation on the active cycle button, in addition to creating the login and Leaderboard screens.",
-                        "link": [
+                        "links": [
                             {
                                 "type": "web",
                                 "text": "Live Preview",
@@ -115,7 +113,7 @@
                 "organizationPrefix": "at",
                 "period": "Jan 2021 - Present",
                 "content": "Maintenance in e-commerce applications and implementation of LGPD (Lei Geral de Proteção de Dados) rules. Integration with external API.",
-                "link": [
+                "links": [
                     {
                         "type": "web",
                         "text": "Chleba",
@@ -129,7 +127,7 @@
                 "organizationPrefix": "at",
                 "period": "Feb 2012 - Jan 2021",
                 "content": "Maintenance and implementation of new features in internal web applications.",
-                "link": [
+                "links": [
                     {
                         "type": "web",
                         "text": "Brose",
@@ -148,7 +146,7 @@
                 "organizationPrefix": "at",
                 "period": "Mar 2021 - Apr 2021",
                 "content": "6 weeks course with deep study in ReactJS and Next.js, with CMS, authentication anda database integrations.",
-                "link": [
+                "links": [
                     {
                         "type": "web",
                         "text": "Rocketseat",
@@ -167,7 +165,7 @@
                 "organizationPrefix": "at",
                 "period": "Jul 2018 - Dec 2021",
                 "content": "Graduation.",
-                "link": [
+                "links": [
                     {
                         "type": "web",
                         "text": "UFPR",
@@ -204,7 +202,7 @@
                 "icon": "javascript.svg"
             }
         ],
-        "link": [
+        "links": [
             {
                 "type": "figma",
                 "text": "Figma Layout",

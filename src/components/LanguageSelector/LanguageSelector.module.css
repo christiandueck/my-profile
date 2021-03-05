@@ -11,15 +11,15 @@
 }
 
 .container > h4 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
 .container > nav,
 .languageMobileMenu > nav {
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .container > nav > a,
@@ -30,12 +30,13 @@
     border: 1px solid var(--dark-gray);
     border-radius: 4px;
 
-    line-height: 2.1rem;
-    padding: 0 1rem;
+    padding: 0.8rem 1.5rem;
 
     cursor: pointer;
 
     transition: 0.2s;
+
+    text-transform: lowercase;
 }
 
 .container > nav > a:hover,
@@ -44,6 +45,7 @@
 .languageMobileMenu > nav > a.active {
     color: var(--dark-green);
     border-color: var(--dark-green);
+    background: rgba(197, 198, 200, 0.05);
 }
 
 .container > span {

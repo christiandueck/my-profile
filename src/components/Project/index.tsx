@@ -1,15 +1,15 @@
 import { LinkButton } from '../LinkButton';
 import styles from './Project.module.css';
 
-export function Project({ title, subTitle, text, links }) {
+export function Project({ project }) {
     return (
         <div className={styles.container}>
-            <h6>{title}<span>{subTitle}</span></h6>
+            <h6>{project.title}<span>{project.subtitle}</span></h6>
             <p>
-                {text}
+                {project.content}
             </p>
             <div className={styles.buttons}>
-                {links.map((link) => {
+                {project.links?.map((link) => {
                     return <LinkButton
                         url={link.url}
                         text={link.text}

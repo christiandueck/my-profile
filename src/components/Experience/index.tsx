@@ -1,14 +1,34 @@
-import { ReactNode } from 'react';
 import styles from './Experience.module.css';
+import { Project } from "../Project";
+import { LinkButton } from '../LinkButton';
 
-interface ExperienceProps {
-    children: ReactNode;
-}
-
-export function Experience({ children }: ExperienceProps) {
+export function Experience({ experience }) {
     return (
         <div className={styles.experience}>
-            {children}
-        </div>
+            <h5>{experience.title}</h5>
+            <p>
+                <em>{experience.organizationPrefix}</em> <h6>{experience.organization}</h6>
+                <span>{experience.period}</span>
+            </p>
+            {experience.content &&
+                <p className={styles.mt1}>
+                    {experience.content}
+                </p>
+            }
+            {experience.subItems?.map((project) => {
+                return <Project project={project} />
+            })}
+            {experience.links &&
+                <nav>
+                    {experience.links.map((link) => {
+                        return (<LinkButton
+                            url={link.url}
+                            text={link.text}
+                            type={link.type}
+                        />);
+                    })}
+                </nav>
+            }
+        </div >
     );
 }

@@ -2,14 +2,22 @@ import { useContext, useState } from 'react';
 import { LanguagesContext, LanguagesProvider } from '../../contexts/LanguagesContext';
 import styles from './LanguageSelector.module.css';
 
-export function LanguageSelector() {
-    const { activeLanguage } = useContext(LanguagesContext);
+export function LanguageSelector({ languages }) {
+    const { content, changeToen_US, changeTopt_BR } = useContext(LanguagesContext);
 
-    const [language, setLanguage] = useState('en');
+    const [language, setLanguage] = useState('en_US');
     const [isLanguageMenuVisible, setIsLanguageMenuVisible] = useState(false);
 
     function changeLanguage(language: string) {
         setLanguage(language);
+
+        switch (language) {
+            case 'pt_BR':
+                changeTopt_BR();
+                break;
+            default:
+                changeToen_US();
+        }
 
         if (window.innerWidth <= 720) {
             setIsLanguageMenuVisible(!isLanguageMenuVisible);
@@ -23,27 +31,21 @@ export function LanguageSelector() {
 
             <div className={styles.container}>
 
-                <h4>Fluent in:</h4>
+                <h4>{languages.selectorTitle}</h4>
 
                 <nav>
-                    <a
-                        className={language == 'en' ? styles.active : styles.empty}
-                        onClick={() => changeLanguage('en')}
-                    >english</a>
-
-                    <a
-                        className={language == 'de' ? styles.active : styles.empty}
-                        onClick={() => changeLanguage('de')}
-                    >german</a>
-
-                    <a
-                        className={language == 'pt' ? styles.active : styles.empty}
-                        onClick={() => changeLanguage('pt')}
-                    >portuguese</a>
+                    {languages.items?.map((item) => {
+                        return (
+                            <a
+                                className={language == item.code ? styles.active : styles.empty}
+                                onClick={() => changeLanguage(item.code)}
+                            >{item.title}</a>
+                        );
+                    })}
                 </nav>
 
                 <span>
-                    choose content language
+                    {languages.helper}
                 </span>
             </div>
 
@@ -51,20 +53,12 @@ export function LanguageSelector() {
                 className={`${styles.languageMobileMenu} ${isLanguageMenuVisible && styles.visible}`}
             >
                 <nav>
-                    <a
-                        className={language == 'en' ? styles.active : styles.empty}
-                        onClick={() => changeLanguage('en')}
-                    >english</a>
-
-                    <a
-                        className={language == 'de' ? styles.active : styles.empty}
-                        onClick={() => changeLanguage('de')}
-                    >german</a>
-
-                    <a
-                        className={language == 'pt' ? styles.active : styles.empty}
-                        onClick={() => changeLanguage('pt')}
-                    >portuguese</a>
+                    {languages.items?.map((item) => {
+                        return (<a
+                            className={language == item.code ? styles.active : styles.empty}
+                            onClick={() => changeLanguage(item.code)}
+                        >{item.title}</a>);
+                    })}
                 </nav>
             </div>
         </div>

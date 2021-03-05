@@ -4,7 +4,7 @@ import '../styles/global.css'
 
 function MyApp({ Component, pageProps, language }) {
   return (
-    <LanguagesProvider language={language}>
+    <LanguagesProvider>
       <Component {...pageProps} />
     </LanguagesProvider>
   );

@@ -2,20 +2,22 @@
     "profile": {
         "name": "Christian Dueck",
         "email": "christian@dueck.com.br",
-        "link": [
+        "links": [
             {
                 "type": "github",
+                "text": "GitHub",
                 "url": "https://github.com/christiandueck"
             },
             {
                 "type": "linkedin",
+                "text": "LinkedIn",
                 "url": "https://www.linkedin.com/in/christiandueck/pt_BR"
             }
         ]
     },
     "header": {
         "function": "Desenvolvedor web front-end",
-        "skill": [
+        "skills": [
             {
                 "name": "HTML",
                 "icon": "html5.svg"
@@ -30,19 +32,11 @@
             },
             {
                 "name": "React",
-                "icon": "reacta.svg"
+                "icon": "react.svg"
             },
             {
                 "name": "Next.js",
                 "icon": "nextjs.svg"
-            },
-            {
-                "name": "MySQL",
-                "icon": "mysql.svg"
-            },
-            {
-                "name": "MongoDB",
-                "icon": "mongodb.svg"
             },
             {
                 "name": "Git",
@@ -52,12 +46,14 @@
     },
     "language": {
         "title": "Idiomas",
-        "selectorTitle": "Fluente em",
+        "selectorTitle": "Fluente em:",
+        "helper": "selecione o idioma do conteúdo",
         "items": [
             {
                 "title": "Deutsch",
                 "translatedTitle": "Alemão",
                 "text": "Proficiência bilíngue",
+                "code": "de_DE",
                 "icon": "./flags/germany.svg",
                 "link": "/de_DE"
             },
@@ -65,6 +61,7 @@
                 "title": "English",
                 "translatedTitle": "Inglês",
                 "text": "Proficiência profissional",
+                "code": "en_US",
                 "icon": "./flags/usa.svg",
                 "link": "/"
             },
@@ -72,6 +69,7 @@
                 "title": "Português",
                 "translatedTitle": "Português",
                 "text": "Proficiência nativa",
+                "code": "pt_BR",
                 "icon": "./flags/brazil.svg",
                 "link": "/pt_BR"
             }
@@ -79,7 +77,7 @@
     },
     "personal_statement": {
         "title": "Declaração pessoal",
-        "content": "Trabalho com desenvolvedores web desde 2020, mantenho aplicativos web C #. Entrei na indústria de desenvolvimento trabalhando principalmente como desenvolvedor back-end, mas minha paixão é ser um desenvolvedor front-end. Atualmente trabalhando em projetos pessoais baseados em Next.js."
+        "content": "Trabalho com desenvolvimento web desde 2020, mantenho aplicativos web C#. Entrei na indústria de desenvolvimento trabalhando principalmente como desenvolvedor back-end, mas minha paixão é ser um desenvolvedor front-end. Atualmente trabalhando em projetos pessoais baseados em Next.js."
     },
     "working_experience": {
         "title": "Experiência profissional",
@@ -94,15 +92,15 @@
                         "title": "move.it",
                         "subtitle": "Aplicação em Next.js",
                         "content": "Projeto desenvolvido durante o evento Next Level Week #4 da Rocketseat. Fui além do escopo inicial e tornei a aplicação responsiva para dispositivos móveis, animação no botão de ciclo ativo, além de criar as telas de login e Leaderboard.",
-                        "link": [
+                        "links": [
                             {
                                 "type": "web",
-                                "text": "Live Preview",
+                                "text": "Exemplo",
                                 "url": "https://moveit.dueck.app"
                             },
                             {
                                 "type": "github",
-                                "text": "GitHub repository",
+                                "text": "Repositório GitHub",
                                 "url": "https://github.com/christiandueck/move.it"
                             }
                         ]
@@ -115,7 +113,7 @@
                 "organizationPrefix": "na",
                 "period": "Jan 2021 - Presente",
                 "content": "Manutenção em aplicativos de e-commerce e implantação de normas da LGPD (Lei Geral de Proteção de Dados). Integração com API externa.",
-                "link": [
+                "links": [
                     {
                         "type": "web",
                         "text": "Chleba",
@@ -129,7 +127,7 @@
                 "organizationPrefix": "na",
                 "period": "Fev 2012 - Jan 2021",
                 "content": "Manutenção e implementação de novas funcionalidades em aplicações web internas.",
-                "link": [
+                "links": [
                     {
                         "type": "web",
                         "text": "Brose",
@@ -148,7 +146,7 @@
                 "organizationPrefix": "na",
                 "period": "Mar 2021 - Abr 2021",
                 "content": "Curso de 6 semanas com estudo aprofundado em ReactJS e Next.js, com integração de CMS, autenticação e banco de dados.",
-                "link": [
+                "links": [
                     {
                         "type": "web",
                         "text": "Rocketseat",
@@ -167,7 +165,7 @@
                 "organizationPrefix": "na",
                 "period": "Jul 2018 - Dez 2021",
                 "content": "Graduação.",
-                "link": [
+                "links": [
                     {
                         "type": "web",
                         "text": "UFPR",
@@ -204,7 +202,7 @@
                 "icon": "javascript.svg"
             }
         ],
-        "link": [
+        "links": [
             {
                 "type": "figma",
                 "text": "Layout Figma",

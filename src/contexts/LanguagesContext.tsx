@@ -1,40 +1,52 @@
 import { createContext, ReactNode, useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
 
+import de_DE from '../translation/de_DE.json';
+import en_US from '../translation/en_US.json';
+import pt_BR from '../translation/pt_BR.json';
+
 interface LanguagesContextData {
-    activeLanguage: string,
-    content: () => void
+    activeLanguage: string;
+    content;
+    changeTopt_BR: () => void;
+    changeToen_US: () => void;
 }
 
 interface LanguagesProviderPros {
     children: ReactNode;
-    language: string;
 }
 
 export const LanguagesContext = createContext({} as LanguagesContextData);
 
 export function LanguagesProvider({
-    children, language
+    children
 }: LanguagesProviderPros) {
 
     const [activeLanguage, setActiveLanguage] = useState("en_US");
+    const [content, setContent] = useState(en_US);
 
     useEffect(() => {
-        Cookies.set('language', language);
-        setActiveLanguage(language);
-    }, [language]);
+        Cookies.set('language', activeLanguage);
+    }, [activeLanguage]);
 
-    async function content() {
-        const content = await import(`../translation/pt_BR.json`);
-        return content;
-    };
+    function changeTopt_BR() {
+        setActiveLanguage("pt_BR");
+        setContent(pt_BR);
+        return;
+    }
 
-    content();
+    function changeToen_US() {
+        setActiveLanguage("en_US");
+        setContent(en_US);
+        return;
+    }
 
     return <LanguagesContext.Provider
         value={{
             activeLanguage,
-            content
+            content,
+            changeTopt_BR,
+            changeToen_US
         }}
     >
         {children}

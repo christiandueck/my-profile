@@ -1,12 +1,12 @@
 import styles from './Position.module.css';
 
-export function Position({ title, skills }) {
+export function Position({ position }) {
     return (
         <div className={styles.container}>
-            <h3>{title}</h3>
+            <h3>{position.function}</h3>
 
             <nav>
-                {skills?.map((skill) => {
+                {position.skills?.map((skill) => {
                     return (
                         <a>
                             {skill.name}
